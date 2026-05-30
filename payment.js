@@ -4,7 +4,7 @@
  * ██████████████████████████████████████████████████████████
  * ██  SEEDED BUG: The processPayment function has a typo  ██
  * ██  that causes a 500-like error on submit. The variable ██
- * ██  `cardNumber` is misspelled as `cardNumbr` on the     ██
+ * ██  `cardNumber` is misspelled as `cardNumber` on the     ██
  * ██  validation line, causing a ReferenceError that       ██
  * ██  surfaces as "Internal Error" to the user.            ██
  * ██████████████████████████████████████████████████████████
@@ -48,12 +48,12 @@ function handlePay() {
 function processPayment(cardNumber, expiry, cvv, cardholder) {
   // ─── SEEDED BUG ────────────────────────────────────────
   // The variable is `cardNumber` but the validation line
-  // references `cardNumbr` (missing the 'e'). This causes
+  // references `cardNumber` (missing the 'e'). This causes
   // a ReferenceError that manifests as a 500-like error.
   // ───────────────────────────────────────────────────────
 
   // Basic validation
-  if (!cardNumbr || cardNumbr.replace(/\s/g, '').length < 13) {
+  if (!cardNumber || cardNumber.replace(/\s/g, '').length < 13) {
     throw new Error('Invalid card number');
   }
 

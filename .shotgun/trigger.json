@@ -1,0 +1,15 @@
+{
+  "branch": "shotgun/fix-checkout-3",
+  "incident": {
+    "service": "checkout",
+    "symptom": "Checkout returns 500 on pay-submit, 80% error rate after last deploy that touched payment.js",
+    "suspect_url": "https://arham766.github.io/app-under-test/",
+    "recent_diff_hint": "payment.js"
+  },
+  "instruction": "Fix the issue described above. The committed Kane flow must pass before you declare done.",
+  "previous_failure": {
+    "summary": "failed",
+    "reason": "",
+    "screenshot": null
+  }
+}
