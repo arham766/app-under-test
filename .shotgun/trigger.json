@@ -1,5 +1,5 @@
 {
-  "branch": "shotgun/fix-checkout-2",
+  "branch": "shotgun/fix-checkout-3",
   "incident": {
     "service": "checkout",
     "symptom": "Checkout returns 500 on pay-submit, 80% error rate",
